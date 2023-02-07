@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-container{
+    display: flex; 
+    justify-content: space-between;
+    height: 31px;
+    background-color: hsl(0deg 0% 24%);
+    color: white;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+.menu ul{
+    display: flex;
+    
+}
+.menu ul li{
+    list-style: none;
+    padding-left: 10px;
+}
+.menu ul li button{
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+    color: #8d8d8d;
+    
+}
+.menu ul li button:hover{
+    background-color: #7e7e7e40;
+}
+
+.main-name{
+    color: #8d8d8d;
+    padding-right: 160px;
+    font-size: 16px;
+}
+
+.comands button{
+    background-color: transparent;
+    border: none;
+    width: 46px;    
+    height: 30px;
+}
+
+.comands button:hover{
+    background-color: #7e7e7ea2;
+}
+
+.comands .close:hover{
+    background-color: red;
+}
+
+.command-button{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.702);
+}

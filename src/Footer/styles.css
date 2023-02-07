@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(203deg 100% 40%);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.bottombar-section{
+    display: flex;
+}
+
+.bottombar{
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    padding-left: 10px;
+    padding: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.bottombar p {
+    margin-left: 2px;
+}
+
+.bottombar .icon{
+    font-size: 13px;
+    height: 17px;
+}
+
+.bottombar .icon-size{
+    height: 17px;
+    width: 17px;
+}
+
+.bottombar div{
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+
+
+.bottombar:hover{
+    background-color: hsl(203, 71%, 58%);
+}
+
