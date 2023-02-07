@@ -28,7 +28,7 @@
     border: none;
     padding: 3px;
     border-radius: 3px;
-    color: #8d8d8d;
+    color: hsl(0deg 0% 80%);
     
 }
 .menu ul li button:hover{
@@ -36,7 +36,7 @@
 }
 
 .main-name{
-    color: #8d8d8d;
+    color: hsl(0deg 0% 80%);
     padding-right: 160px;
     font-size: 16px;
 }

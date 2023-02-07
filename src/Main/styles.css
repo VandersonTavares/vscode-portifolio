@@ -20,25 +20,30 @@
     grid-area: r-right;
   }
 
+  /* --------- */
+
+  .active{
+    color: white;
+  }
+
+
 .sidebar{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 92vh;
+    height: 93vh;
     background-color: hsl(0deg 0% 20%);
     padding: 10px;
 }
-.explorer{
-    background-color: red;
-}
-.content{
-    background-color: blue;
-}
+
+/* sidebar left */
 
 .icon-config{
   font-size: 25px;
   color: hsl(250deg 3% 54%);
   cursor: pointer;
+  padding-top: 10px;
+  
 }
 
 .icon-config:hover{
@@ -48,3 +53,93 @@
 .botton-buttons{
   padding-bottom: 20px;
 }
+
+/* ----------- */
+
+
+/* explorer */
+
+.explorer{
+  background-color: hsl(0deg 0% 15%);
+}
+.explorer-div{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  color: white;
+  padding-top: 10px;
+}
+
+.explorer-icon{
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.explorer-div .explorer-icon:hover{
+  background-color: hsl(250deg 5% 23%);
+}
+
+.explorer h4{
+  color: white;
+  font-weight: 400;
+  margin: 0px 0px 10px 10px;
+}
+.explorer-icon{
+  height: 20px;
+  width: 20px;
+}
+
+.explorer-content{
+  font-size: 20px;
+}
+
+.explorer .item{
+  display: flex;
+  font-size: 15px;
+}
+
+.explorer p{
+  padding: 2px;  
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.explorer-btn{
+  padding-left: 10px;
+  padding-bottom: 4px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.item{
+  padding-left: 20px;
+}
+
+.item a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.item:hover{
+  background-color: hsl(250deg 5% 23%);
+}
+
+.arrow-down{
+  font-size: 16px;
+
+}
+
+/* ----------- */
+
+
+.content{
+    background-color:hsl(0deg 0% 12%);
+}
+
