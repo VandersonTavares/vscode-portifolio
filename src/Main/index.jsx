@@ -62,31 +62,31 @@ const Main = () => {
         <button className="explorer-btn" onClick={()=> setOpen(!open)}> {open ? <VscChevronDown className="arrow-down"/> : <VscChevronRight/>} PORTFOLIO</button>
         {open && <div className="explorer-content">
           <div className="item">
-            <a href="#">
+            <a href="link">
               <ReactIcon className="explorer-icon" />
               <p>home.jsx</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="link">
               <HtmlIcon className="explorer-icon" />
               <p>about.html</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="link">
               <CssIcon className="explorer-icon" />
               <p>contact.css</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="link">
               <JsIcon className="explorer-icon" />
               <p>projects.js</p>
             </a>
           </div>
           <div className="item">
-            <a href="#">
+            <a href="link">
               <JsonIcon className="explorer-icon" />
               <p>github.md</p>
             </a>
