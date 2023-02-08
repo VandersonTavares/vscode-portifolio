@@ -32,6 +32,10 @@
   color: white;
 }
 
+.side-active{
+  color: white;
+}
+
 
 .sidebar{
     display: flex;

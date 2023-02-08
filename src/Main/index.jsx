@@ -32,7 +32,7 @@ const Main = () => {
       <div className="sidebar left">
         <div className="top-buttons">
           <div className="icon-config">
-            <VscFiles className="side-active" />
+            <VscFiles className="side-active"/>
           </div>
           <div className="icon-config">
             <VscSearch />
