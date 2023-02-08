@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "./Header";
 import Main from "./Main";
@@ -22,6 +22,8 @@ const Content = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/github" element={<Github />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="" element={<Navigate to="/home" replace />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Route>
       </Routes>
       <Footer />
