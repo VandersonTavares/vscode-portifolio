@@ -1,0 +1,11 @@
+p{
+    color: white;
+    padding-left: 10px;
+}
+
+.map p{
+    display: flex;
+    margin-left: 3px;
+    font-size: 14px;
+    color: hsl(330deg 5% 66%);
+}

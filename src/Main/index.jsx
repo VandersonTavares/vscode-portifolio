@@ -18,6 +18,7 @@ import {
   VscExtensions,
   VscAccount,
   VscGear,
+  VscClose,
 } from "react-icons/vsc";
 
 import "./styles.css";
@@ -31,7 +32,7 @@ const Main = () => {
       <div className="sidebar left">
         <div className="top-buttons">
           <div className="icon-config">
-            <VscFiles className="side-active"/>
+            <VscFiles className="side-active" />
           </div>
           <div className="icon-config">
             <VscSearch />
@@ -47,7 +48,11 @@ const Main = () => {
           </div>
         </div>
         <div className="botton-buttons" title="Github">
-          <a href="https://github.com/VandersonTavares" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/VandersonTavares"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="icon-config">
               <VscAccount />
             </div>
@@ -60,81 +65,101 @@ const Main = () => {
       <div className="explorer right">
         <div className="explorer-div">
           <h4>EXPLORER</h4>
-            <VscEllipsis className="explorer-icon"/>
+          <VscEllipsis className="explorer-icon" />
         </div>
-        <button className="explorer-btn" onClick={()=> setOpen(!open)}> {open ? <VscChevronDown className="arrow-down"/> : <VscChevronRight/>} PORTFOLIO</button>
-        {open && <div className="explorer-content">
-          <div className="item">
-            <Link to="/home" >
-              <ReactIcon className="explorer-icon" />
-              <p>home.jsx</p>
-            </Link>
+        <button className="explorer-btn" onClick={() => setOpen(!open)}>
+          {" "}
+          {open ? (
+            <VscChevronDown className="arrow-down" />
+          ) : (
+            <VscChevronRight />
+          )}{" "}
+          PORTFOLIO
+        </button>
+        {open && (
+          <div className="explorer-content">
+            <div className="item">
+              <Link to="/home">
+                <ReactIcon className="explorer-icon" />
+                <p>home.jsx</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/about">
+                <HtmlIcon className="explorer-icon" />
+                <p>about.html</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/contact">
+                <CssIcon className="explorer-icon" />
+                <p>contact.css</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/projects">
+                <JsIcon className="explorer-icon" />
+                <p>projects.js</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/github">
+                <JsonIcon className="explorer-icon" />
+                <p>github.md</p>
+              </Link>
+            </div>
           </div>
-          <div className="item">
-            <Link to="/about">
-              <HtmlIcon className="explorer-icon" />
-              <p>about.html</p>
-            </Link>
-          </div>
-          <div className="item">
-            <Link to="/contact">
-              <CssIcon className="explorer-icon" />
-              <p>contact.css</p>
-            </Link>
-          </div>
-          <div className="item">
-            <Link to="/projects">
-              <JsIcon className="explorer-icon" />
-              <p>projects.js</p>
-            </Link>
-          </div>
-          <div className="item">
-            <Link to="/github">
-              <JsonIcon className="explorer-icon" />
-              <p>github.md</p>
-            </Link>
-          </div>
-        </div>}
+        )}
       </div>
       <div className="content r-right">
         <div className="top-header">
           <div className="tab">
             <NavLink to="/home">
               <div>
+                <ReactIcon className="explorer-icon" />{" "}
                 <p className="not-save">home.jsx</p>
+                <VscClose className="hide" />
               </div>
             </NavLink>
           </div>
           <div className="tab">
             <NavLink to="/about">
               <div>
+                <HtmlIcon className="explorer-icon" />
                 <p>about.html</p>
+                <VscClose className="hide" />
               </div>
             </NavLink>
           </div>
           <div className="tab">
             <NavLink to="/contact">
               <div>
+                <CssIcon className="explorer-icon" />
                 <p className="save">contact.css</p>
+                <VscClose className="hide" />
               </div>
             </NavLink>
           </div>
           <div className="tab">
             <NavLink to="/projects">
               <div>
+                <JsIcon className="explorer-icon" />
                 <p className="not-save">project.js</p>
+                <VscClose className="hide" />
               </div>
             </NavLink>
           </div>
           <div className="tab">
             <NavLink to="/github">
               <div>
+                <JsonIcon className="explorer-icon" />
                 <p>github.md</p>
+                <VscClose className="hide" />
               </div>
             </NavLink>
           </div>
         </div>
-        <Outlet/>
+        <Outlet />
       </div>
     </div>
   );
