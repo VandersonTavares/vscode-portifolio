@@ -21,6 +21,7 @@ import {
 } from "react-icons/vsc";
 
 import "./styles.css";
+import { NavLink, Outlet, Link } from "react-router-dom";
 
 const Main = () => {
   const [open, setOpen] = useState(true);
@@ -30,7 +31,7 @@ const Main = () => {
       <div className="sidebar left">
         <div className="top-buttons">
           <div className="icon-config">
-            <VscFiles className="active"/>
+            <VscFiles className="side-active"/>
           </div>
           <div className="icon-config">
             <VscSearch />
@@ -64,39 +65,76 @@ const Main = () => {
         <button className="explorer-btn" onClick={()=> setOpen(!open)}> {open ? <VscChevronDown className="arrow-down"/> : <VscChevronRight/>} PORTFOLIO</button>
         {open && <div className="explorer-content">
           <div className="item">
-            <a href="link">
+            <Link to="/home" >
               <ReactIcon className="explorer-icon" />
               <p>home.jsx</p>
-            </a>
+            </Link>
           </div>
           <div className="item">
-            <a href="link">
+            <Link to="/about">
               <HtmlIcon className="explorer-icon" />
               <p>about.html</p>
-            </a>
+            </Link>
           </div>
           <div className="item">
-            <a href="link">
+            <Link to="/contact">
               <CssIcon className="explorer-icon" />
               <p>contact.css</p>
-            </a>
+            </Link>
           </div>
           <div className="item">
-            <a href="link">
+            <Link to="/projects">
               <JsIcon className="explorer-icon" />
               <p>projects.js</p>
-            </a>
+            </Link>
           </div>
           <div className="item">
-            <a href="link">
+            <Link to="/github">
               <JsonIcon className="explorer-icon" />
               <p>github.md</p>
-            </a>
+            </Link>
           </div>
         </div>}
       </div>
       <div className="content r-right">
-        <p>content</p>
+        <div className="top-header">
+          <div className="tab">
+            <NavLink to="/home">
+              <div>
+                <p className="not-save">home.jsx</p>
+              </div>
+            </NavLink>
+          </div>
+          <div className="tab">
+            <NavLink to="/about">
+              <div>
+                <p>about.html</p>
+              </div>
+            </NavLink>
+          </div>
+          <div className="tab">
+            <NavLink to="/contact">
+              <div>
+                <p className="save">contact.css</p>
+              </div>
+            </NavLink>
+          </div>
+          <div className="tab">
+            <NavLink to="/projects">
+              <div>
+                <p className="not-save">project.js</p>
+              </div>
+            </NavLink>
+          </div>
+          <div className="tab">
+            <NavLink to="/github">
+              <div>
+                <p>github.md</p>
+              </div>
+            </NavLink>
+          </div>
+        </div>
+        <Outlet/>
       </div>
     </div>
   );

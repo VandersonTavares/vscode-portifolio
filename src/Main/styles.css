@@ -22,9 +22,15 @@
 
   /* --------- */
 
-  .active{
-    color: white;
-  }
+.active div{
+  color: white;
+  background-color: hsl(0deg 0% 12%);
+  
+}
+.tab a{
+  text-decoration: none;
+  color: white;
+}
 
 
 .sidebar{
@@ -138,8 +144,32 @@
 
 /* ----------- */
 
+/* CONTENT */
 
 .content{
     background-color:hsl(0deg 0% 12%);
 }
 
+.top-header{
+  height: 35px;
+  background-color: hsl(0deg 0% 20%);
+  display: flex;
+  align-items: center;
+}
+
+.tab div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 35px;
+  border-right: 1px solid hsl(0deg 0% 12%);
+  /* background-color: hsl(0deg 0% 18%); */
+  
+}
+.not-save{
+  color: hsl(33deg 45% 65%);
+}
+.save{
+  color: hsl(129deg 42% 30%);
+}
