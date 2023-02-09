@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>    
                 </div>
             <div className="bottombar-section">
-             <div className="bottombar">
+             <div className="bottombar hide" >
                     <div ><RiSignalTowerFill className="icon"/><p>Go Live</p></div>
                 </div>
                 <div className="bottombar">

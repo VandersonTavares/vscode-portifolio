@@ -28,9 +28,9 @@ const Main = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="grid-container">
-      <div className="sidebar left">
-        <div className="top-buttons">
+    <div className="container">
+      <div className="sidebar">
+      <div className="top-buttons">
           <div className="icon-config">
             <VscFiles className="side-active"/>
           </div>
@@ -62,15 +62,15 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="explorer right">
-        <div className="explorer-div">
+      <div className="explorer-tab">
+      <div className="explorer-div">
           <h4>EXPLORER</h4>
           <VscEllipsis className="explorer-icon" />
         </div>
         <button className="explorer-btn" onClick={() => setOpen(!open)}>
           {" "}
           {open ? (
-            <VscChevronDown className="arrow-down" />
+            <VscChevronDown />
           ) : (
             <VscChevronRight />
           )}{" "}
@@ -111,8 +111,8 @@ const Main = () => {
           </div>
         )}
       </div>
-      <div className="content r-right">
-        <div className="top-header">
+      <div className="content">
+      <div className="top-header">
           <div className="tab">
             <NavLink to="/home">
               <div>
@@ -159,9 +159,10 @@ const Main = () => {
             </NavLink>
           </div>
         </div>
-        <Outlet />
+        <Outlet/>
       </div>
     </div>
+
   );
 };
 

@@ -1,123 +1,64 @@
-.grid-container {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-areas: "left right r-right";
-    grid-template-columns: 50px 300px 1fr;
-    grid-template-rows: 1fr;
-  }
-  .container > div {
-    border: 1px dashed #888;
-  }
-
-  .left {
-    grid-area: left;
-  }
-  .right {
-    grid-area: right;
-  }
-  .r-right {
-    grid-area: r-right;
-  }
-
-  /* --------- */
-
-.active div{
-  color: white;
-  background-color: hsl(0deg 0% 12%);
-  
-}
-.tab a{
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   text-decoration: none;
-  color: white;
 }
 
+.container {
+  display: flex;
+  height: 96vh;
+}
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0deg 0% 20%);
+  padding: 10px 10px 20px 10px;
+}
 .side-active{
   color: white;
 }
-
-
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 93vh;
-    background-color: hsl(0deg 0% 20%);
-    padding: 10px;
-}
-
-/* sidebar left */
-
-.icon-config{
+.sidebar .icon-config {
   font-size: 25px;
   color: hsl(250deg 3% 54%);
   cursor: pointer;
   padding-top: 10px;
-  
 }
-
-.icon-config:hover{
+.sidebar .icon-config:hover {
   color: white;
 }
-
-.botton-buttons{
+.sidebar .botton-buttons {
   padding-bottom: 20px;
 }
 
-/* ----------- */
 
-
-/* explorer */
-
-.explorer{
+.explorer-tab {
   background-color: hsl(0deg 0% 15%);
+  width: 200px;
 }
-.explorer-div{
+.explorer-div h4 {
+  color: white;
+  font-weight: 400;
+  margin: 0px 0px 10px 10px;
+}
+.explorer-tab .explorer-div {
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
   color: white;
   padding-top: 10px;
 }
-
-.explorer-icon{
+.explorer-tab .explorer-icon {
   border-radius: 5px;
   cursor: pointer;
-  height: 30px;
-  width: 30px;
-}
-
-.explorer-div .explorer-icon:hover{
-  background-color: hsl(250deg 5% 23%);
-}
-
-.explorer h4{
-  color: white;
-  font-weight: 400;
-  margin: 0px 0px 10px 10px;
-}
-.explorer-icon{
   height: 20px;
   width: 20px;
 }
-
-.explorer-content{
-  font-size: 20px;
-}
-
-.explorer .item{
-  display: flex;
-  font-size: 15px;
-}
-
-.explorer p{
-  padding: 2px;  
-  font-size: 15px;
-  font-weight: 500;
-  
-}
-
-.explorer-btn{
+.explorer-btn {
   padding-left: 10px;
   padding-bottom: 4px;
   border: none;
@@ -126,59 +67,63 @@
   font-size: 15px;
   cursor: pointer;
 }
-
-.item{
+.explorer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.explorer-content .item{
   padding-left: 20px;
 }
-
-.item a{
+.explorer-content .item a{
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
 }
-
-.item:hover{
+.explorer-content .item:hover{
   background-color: hsl(250deg 5% 23%);
 }
-
-.arrow-down{
-  font-size: 16px;
-
+.explorer-content p {
+  padding: 2px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-/* ----------- */
 
-/* CONTENT */
-
-.content{
-    background-color:hsl(0deg 0% 12%);
+.content {
+  background-color:hsl(0deg 0% 12%);
+  width: 100%;
 }
-
-.top-header{
+.content .top-header{
   height: 35px;
   background-color: hsl(0deg 0% 20%);
   display: flex;
   align-items: center;
 }
-
-.tab div{
+.content .tab div{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 130px;
   height: 35px;
   border-right: 1px solid hsl(0deg 0% 12%);
-  /* background-color: hsl(0deg 0% 18%); */
 }
-
-.tab div:hover .hide{
+.content .tab div:hover .hide{
   color: white;
 }
-
-.tab p{
+.content .tab p{
   margin-right: 5px;
   padding-left: 5px;
+}
+.explorer-icon{
+  border-radius: 5px;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.explorer-div .explorer-icon:hover{
+  background-color: hsl(250deg 5% 23%);
 }
 .not-save{
   color: hsl(33deg 45% 65%);
@@ -190,3 +135,25 @@
   color: transparent;
 }
 
+.active div{
+  color: white;
+  background-color: hsl(0deg 0% 12%);
+}
+
+@media(max-width:576px){
+  .sidebar{
+    display: none;
+  }
+  .explorer-tab{
+    display: none;
+  }
+  .content .top-header{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+ .content .map{
+    display: none;
+  }
+
+}

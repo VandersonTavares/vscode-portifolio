@@ -1,62 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.header-container{
-    display: flex; 
-    justify-content: space-between;
-    height: 31px;
-    background-color: hsl(0deg 0% 24%);
-    color: white;
-    align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 31px;
+  background-color: hsl(0deg 0% 24%);
+  color: white;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.menu ul{
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style: none;
+  padding-left: 10px;
+}
+.menu ul li button {
+  background-color: transparent;
+  border: none;
+  padding: 3px;
+  border-radius: 3px;
+  color: hsl(0deg 0% 80%);
+}
+.menu ul li button:hover {
+  background-color: #7e7e7e40;
+}
+
+.main-name {
+  color: hsl(0deg 0% 80%);
+  padding-right: 160px;
+  font-size: 16px;
+}
+
+.comands button {
+  background-color: transparent;
+  border: none;
+  width: 46px;
+  height: 30px;
+}
+
+.comands button:hover {
+  background-color: #7e7e7ea2;
+}
+
+.comands .close:hover {
+  background-color: red;
+}
+
+.command-button {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.702);
+}
+
+@media (max-width: 1140px) {
+  .header-container {
     display: flex;
-    
-}
-.menu ul li{
-    list-style: none;
-    padding-left: 10px;
-}
-.menu ul li button{
-    background-color: transparent;
-    border: none;
-    padding: 3px;
-    border-radius: 3px;
-    color: hsl(0deg 0% 80%);
-    
-}
-.menu ul li button:hover{
-    background-color: #7e7e7e40;
+    justify-content: center;
+  }
+  .hide {
+    display: none;
+  }
+  .main-name {
+    padding: 0px;
+  }
+  .main-name p {
+    padding: 0px;
+    font-size: 15px;
+  }
 }
 
-.main-name{
-    color: hsl(0deg 0% 80%);
-    padding-right: 160px;
-    font-size: 16px;
-}
-
-.comands button{
-    background-color: transparent;
-    border: none;
-    width: 46px;    
-    height: 30px;
-}
-
-.comands button:hover{
-    background-color: #7e7e7ea2;
-}
-
-.comands .close:hover{
-    background-color: red;
-}
-
-.command-button{
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.702);
+@media (max-width: 340px) {
+  .main-name p {
+    font-size: 13px;
+  }
 }

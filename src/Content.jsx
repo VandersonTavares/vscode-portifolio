@@ -12,7 +12,7 @@ import Github from "./pages/Github";
 import Projects from "./pages/Projects";
 
 const Content = () => {
-  return (
+  return (  
     <BrowserRouter>
       <Header />
       <Routes>

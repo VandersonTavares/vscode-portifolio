@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <div className='map'>
       <p>{map}</p> 
+      
     </div>
   )
 }

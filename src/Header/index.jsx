@@ -6,7 +6,7 @@ import "./styles.css";
 const Header = () => {
     return (
         <div className="header-container">
-            <div className="menu">
+            <div className="menu hide">
                 <ul>
                     <li><button>File</button></li>
                     <li><button>Edit</button></li>
@@ -21,7 +21,7 @@ const Header = () => {
             <div className="main-name">
                 <p>Vanderson-Tavares-da-Silva.jsx - Visual Studio Code</p>
             </div>
-            <div className="comands">
+            <div className="comands hide">
                 <button className="command-button"><VscChromeMinimize/></button>
                 <button className="command-button"><VscChromeRestore/></button>
                 <button className="close command-button"><VscChromeClose/></button>
