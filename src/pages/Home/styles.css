@@ -1,11 +1,82 @@
-p{
-    color: white;
-    padding-left: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.map p{
+.personal-container {
+    /* border: 1px solid red; */
     display: flex;
-    margin-left: 3px;
-    font-size: 14px;
-    color: hsl(330deg 5% 66%);
+    height: 91vh;
+    justify-content: space-between;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: hsl(0deg 0% 12%);
+    color: white;
+    background-image: url("../../util/img/radiant-gradient.svg");
+    background-size: 200%;
+    
+}
+
+.personal-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 500px;
+    /* border: 1px solid green; */
+}
+.personal-infos h1{
+    font-size: 40px;
+    color: hsl(203deg 100% 40%);
+}
+
+.personal-infos p {
+    font-size: 10px;
+}
+
+.buttons{
+    display: flex;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.button a{
+    color: white;
+}
+
+.buttons .button {
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 5px;
+}
+
+.buttons .button:hover {
+    background-color: hsl(203deg 100% 40%);
+    color: black;
+    border: none;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:760px){
+    .personal-img{
+        display: none;
+    }
 }

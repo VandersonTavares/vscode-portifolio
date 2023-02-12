@@ -47,14 +47,14 @@ const Main = () => {
             <VscDebugAlt />
           </div>
         </div>
-        <div className="botton-buttons" title="Github">
+        <div className="botton-buttons">
           <a
             href="https://github.com/VandersonTavares"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div className="icon-config">
-              <VscAccount />
+              <VscAccount title="Github"/>
             </div>
           </a>
           <div className="icon-config">

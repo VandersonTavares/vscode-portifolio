@@ -95,6 +95,7 @@
   background-color:hsl(0deg 0% 12%);
   width: 100%;
 }
+
 .content .top-header{
   height: 35px;
   background-color: hsl(0deg 0% 20%);
@@ -136,8 +137,8 @@
 }
 
 .active div{
-  color: white;
   background-color: hsl(0deg 0% 12%);
+  border-top: 0.5px solid orange;
 }
 
 @media(max-width:576px){
