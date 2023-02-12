@@ -1,11 +1,10 @@
 import React from 'react'
 
 const Github = () => {
-  const map = "src > pages > Github > index.jsx > Github" ;
 
   return (
-    <div className='map'>
-      <p>{map}</p> 
+    <div>
+      <h1>Página Github</h1>
     </div>
   )
 }

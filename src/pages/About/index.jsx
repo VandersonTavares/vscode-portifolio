@@ -1,11 +1,10 @@
 import React from 'react'
 
 const About = () => {
-  const map = "src > pages > About > index.jsx > About" ;
 
   return (
-    <div className='map'>
-      <p>{map}</p> 
+    <div>
+      <h1>Página About</h1>
     </div>
   )
 }

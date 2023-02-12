@@ -1,8 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 import "./styles.css";
 
-const ProjectCard = ({name, description}) => {
+const ProjectCard = ({name, description, gitLink, demoLink}) => {
   return (
     <div className="card">
         <div className="img">
@@ -17,8 +18,8 @@ const ProjectCard = ({name, description}) => {
             <span>CSS</span>
         </div>
         <div className="project-urls">
-            <a href="link">Código Fonte</a>
-            <a href="link">Live Demo</a>
+            <NavLink to={gitLink} target={"_blank"}>Código Fonte</NavLink>
+            <NavLink to={demoLink} target={"_blank"}>Live Demo</NavLink>
         </div>
     </div>
   )
