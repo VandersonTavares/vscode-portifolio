@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Typewriter from "react-ts-typewriter";
 
 import "./styles.css";
 
@@ -8,8 +9,7 @@ const Home = () => {
     <div className="personal-container">
       <div className="personal-infos">
         <h1>Vanderson Tavares</h1>
-        <h3>Desenvolvedor Front-End Iniciante</h3>
-        <p>Portfolio inspirado na IDE vs-code. õ.o - a vá</p>
+        <Typewriter text='Desenvolvedor Front-End Iniciante'/>
         <div className="buttons">
           <div className="button">
           <NavLink to="/projects">Projects</NavLink>

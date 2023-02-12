@@ -1,11 +1,10 @@
-p{
-    color: white;
-    padding-left: 10px;
+.project-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.map p{
-    display: flex;
-    margin-left: 3px;
-    font-size: 14px;
-    color: hsl(330deg 5% 66%);
+.layout-content h3{
+    padding: 10px;
+    color: white;
 }

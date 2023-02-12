@@ -39,13 +39,13 @@
 
 .buttons{
     display: flex;
+    margin: 20px;
 }
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 .button a{
     color: white;
@@ -56,7 +56,7 @@
     width: 100px;
     height: 30px;
     color: white;
-    border: 1px solid white;
+    background-color: hsl(203deg 100% 40%);
     cursor: pointer;
     margin: 10px;
     font-size: 18px;
@@ -65,7 +65,7 @@
 }
 
 .buttons .button:hover {
-    background-color: hsl(203deg 100% 40%);
+    background-color: hsla(203, 100%, 40%, 0.507);
     color: black;
     border: none;
 }
