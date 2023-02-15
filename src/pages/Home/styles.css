@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.personal-container {
+.home-personal-container {
     /* border: 1px solid red; */
     display: flex;
     height: 91vh;
@@ -19,7 +19,7 @@
     
 }
 
-.personal-infos {
+.home-personal-infos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,5 +78,8 @@
 @media(max-width:760px){
     .personal-img{
         display: none;
+    }
+    .home-personal-infos{
+        margin: 0px;
     }
 }

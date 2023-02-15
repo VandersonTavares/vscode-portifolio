@@ -6,8 +6,8 @@ import "./styles.css";
 
 const Home = () => {
   return (
-    <div className="personal-container">
-      <div className="personal-infos">
+    <div className="home-personal-container">
+      <div className="home-personal-infos">
         <h1>Vanderson Tavares</h1>
         <Typewriter text='Desenvolvedor Front-End Iniciante'/>
         <div className="buttons">

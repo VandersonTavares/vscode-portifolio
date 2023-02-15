@@ -17,8 +17,7 @@
     background-color: hsl(0deg 0% 20%);
 }
 .img{
-    border: 1px solid red;
-    background-color: crimson;
+    border: 1px solid crimson;
     border-radius: 14px;
 }
 .project-infos h3{

@@ -1,11 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-import { ReactComponent as ReactIcon } from "../util/img/react_icon.svg";
-import { ReactComponent as HtmlIcon } from "../util/img/html_icon.svg";
-import { ReactComponent as CssIcon } from "../util/img/css_icon.svg";
-import { ReactComponent as JsIcon } from "../util/img/js_icon.svg";
-import { ReactComponent as JsonIcon } from "../util/img/json_icon.svg";
+import { ReactComponent as ReactIcon } from "../../util/img/react_icon.svg";
+import { ReactComponent as HtmlIcon } from "../../util/img/html_icon.svg";
+import { ReactComponent as CssIcon } from "../../util/img/css_icon.svg";
+import { ReactComponent as JsIcon } from "../../util/img/js_icon.svg";
+import { ReactComponent as JsonIcon } from "../../util/img/json_icon.svg";
+
+import Hamburger from "hamburger-react";
 
 import {
   VscFiles,
@@ -26,13 +28,14 @@ import { NavLink, Outlet, Link } from "react-router-dom";
 
 const Main = () => {
   const [open, setOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="container">
       <div className="sidebar">
-      <div className="top-buttons">
+        <div className="top-buttons">
           <div className="icon-config">
-            <VscFiles className="side-active"/>
+            <VscFiles className="side-active" />
           </div>
           <div className="icon-config">
             <VscSearch />
@@ -54,7 +57,7 @@ const Main = () => {
             rel="noopener noreferrer"
           >
             <div className="icon-config">
-              <VscAccount title="Github"/>
+              <VscAccount title="Github" />
             </div>
           </a>
           <div className="icon-config">
@@ -63,18 +66,13 @@ const Main = () => {
         </div>
       </div>
       <div className="explorer-tab">
-      <div className="explorer-div">
+        <div className="explorer-div">
           <h4>EXPLORER</h4>
           <VscEllipsis className="explorer-icon" />
         </div>
         <button className="explorer-btn" onClick={() => setOpen(!open)}>
           {" "}
-          {open ? (
-            <VscChevronDown />
-          ) : (
-            <VscChevronRight />
-          )}{" "}
-          PORTFOLIO
+          {open ? <VscChevronDown /> : <VscChevronRight />} PORTFOLIO
         </button>
         {open && (
           <div className="explorer-content">
@@ -112,7 +110,44 @@ const Main = () => {
         )}
       </div>
       <div className="content">
-      <div className="top-header">
+        <div className="div-hamb">
+        <Hamburger toggled={isOpen} toggle={setIsOpen}/>
+        { isOpen &&
+          <div className="hamb-menu">
+            <div className="item">
+              <Link to="/home">
+                <ReactIcon className="explorer-icon" />
+                <p>home.jsx</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/about">
+                <HtmlIcon className="explorer-icon" />
+                <p>about.html</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/contact">
+                <CssIcon className="explorer-icon" />
+                <p>contact.css</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/projects">
+                <JsIcon className="explorer-icon" />
+                <p>projects.js</p>
+              </Link>
+            </div>
+            <div className="item">
+              <Link to="/github">
+                <JsonIcon className="explorer-icon" />
+                <p>github.md</p>
+              </Link>
+            </div>
+          </div>
+        }
+        </div>
+        <div className="top-header">
           <div className="tab">
             <NavLink to="/home">
               <div>
@@ -159,10 +194,9 @@ const Main = () => {
             </NavLink>
           </div>
         </div>
-        <Outlet/>
+        <Outlet />
       </div>
     </div>
-
   );
 };
 
