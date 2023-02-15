@@ -8,7 +8,7 @@ const Projects = () => {
   return (
 
     <div className='layout-content'>
-      <h3>Projetinho Fellas</h3>  
+      <h3>Meus Projetos</h3>  
       <div className="project-content">
           <ProjectCard name={"Cellshop"} description={"Projeto criado utilizando a API do Mercado Livre, Axios, Local Storage e Styled Components."} demoLink={"https://cellshop-demo.netlify.app/"} gitLink={"https://github.com/VandersonTavares/cellshop"}/>
           <ProjectCard name={"Vs-Code Protfolio"} description={"Portfolio inspirado na IDE Visual Code Studio, projeto de portfolio pessoal."} demoLink={"https://vanderson-tavares-portfolio.netlify.app/"} gitLink={"https://github.com/VandersonTavares/vscode-portifolio"}/>

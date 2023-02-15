@@ -17,14 +17,14 @@
     background-color: hsl(0deg 0% 20%);
 }
 .img{
-    border: 1px solid crimson;
+    border: 1px solid hsl(203deg 100% 40%);
     border-radius: 14px;
 }
 .project-infos h3{
     padding: 10px;
 }
 .project-infos a:hover{
-    color: crimson;
+    color: hsl(203deg 100% 40%);
 }
 .project-infos p {
     padding: 10px 0px 20px 10px;
@@ -41,7 +41,7 @@
 .project-tags span{
     padding: 0px 10px;    
     margin-left: 5px;
-    border: 1px solid crimson;
+    border: 1px solid hsl(203deg 100% 40%);
     border-radius: 10px;
 }
 
@@ -53,10 +53,10 @@
 }
 
 .project-urls a{
-    border-bottom: 1px solid crimson;
+    border-bottom: 1px solid hsl(203deg 100% 40%);
 }
 
 .project-urls a:hover{
-    color: crimson;
+    color: hsl(203deg 100% 40%);
     border-bottom: 1px solid white;
 }
