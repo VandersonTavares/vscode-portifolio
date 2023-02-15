@@ -1,7 +1,0 @@
-# Redirects from what the browser requests to what we serve
-
-/home/* https://vanderson-tavares-portfolio.netlify.app/ 
-/projects/* https://vanderson-tavares-portfolio.netlify.app/
-/github/* https://vanderson-tavares-portfolio.netlify.app/
-/contact/* https://vanderson-tavares-portfolio.netlify.app/
-/about/* https://vanderson-tavares-portfolio.netlify.app/
