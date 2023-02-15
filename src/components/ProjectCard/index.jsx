@@ -9,17 +9,16 @@ const ProjectCard = ({name, description, gitLink, demoLink}) => {
         <div className="img">
         </div>
         <div className="project-infos">
-            <h3>{name}</h3>
+            <h3><NavLink to={demoLink} target={"_blank"}>{name}</NavLink></h3>
             <p>{description}</p>
         </div>
         <div className="project-tags">
-            <span>react</span>
-            <span>HTML</span>
-            <span>CSS</span>
+            <span>ReactJS</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
         </div>
         <div className="project-urls">
             <NavLink to={gitLink} target={"_blank"}>Código Fonte</NavLink>
-            <NavLink to={demoLink} target={"_blank"}>Live Demo</NavLink>
         </div>
     </div>
   )

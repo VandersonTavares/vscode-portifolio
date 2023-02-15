@@ -23,7 +23,9 @@
 }
 .project-infos h3{
     padding: 10px;
-
+}
+.project-infos a:hover{
+    color: crimson;
 }
 .project-infos p {
     padding: 10px 0px 20px 10px;
