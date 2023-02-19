@@ -14,8 +14,8 @@
     font-family: 'Source Sans Pro', sans-serif;
     background-color: hsl(0deg 0% 12%);
     color: white;
-    background-image: url("../../util/img/radiant-gradient.svg");
-    background-size: 200%;
+    /* background-image: url("../../util/img/radiant-gradient.svg");
+    background-size: 200%; */
     
 }
 
