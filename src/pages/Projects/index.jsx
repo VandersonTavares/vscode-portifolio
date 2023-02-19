@@ -10,6 +10,7 @@ import GithubImg from "../../util/img/github-cover.jpg";
 import CellphoneImg from "../../util/img/cellshopbanner.png";
 import FoodCommerce from "../../util/img/food-commerce.png";
 
+
 const Projects = () => {
   return (
     <div className="layout-content">
@@ -18,6 +19,7 @@ const Projects = () => {
         <ProjectCard
           name={"Vs-Code Protfolio"}
           image={VsCodeImg}
+          technologies = {['react', 'html', 'css']}
           description={
             "Portfolio inspirado na IDE Visual Code Studio, projeto de portfolio pessoal."
           }
@@ -27,6 +29,7 @@ const Projects = () => {
         <ProjectCard
           name={"Food Commerce"}
           image={FoodCommerce}
+          technologies = {['react', 'html', 'css', 'typescript']}
           description={"NÃO FINALIZADO"}
           demoLink={"#"}
           gitLink={"https://github.com/VandersonTavares/Pedido-Online"}
@@ -34,6 +37,7 @@ const Projects = () => {
         <ProjectCard
           name={"Buscador de Usuário Github"}
           image={GithubImg}
+          technologies={[ "react", "html", "css", "javascript" ]}
           description={
             "Pequeno desafio feito no bootcamp da DevSuperior, ensinando como consumir API's."
           }
@@ -43,6 +47,7 @@ const Projects = () => {
         <ProjectCard
           name={"Twitter Clone"}
           image={TwitterImg}
+          technologies={["react", "html", "css", "typescript" ]}
           description={"Projeto criado utlizando typescript, react-icons"}
           demoLink={"https://uitwitter-clone.netlify.app"}
           gitLink={"https://github.com/VandersonTavares/twitter-clone"}
@@ -50,6 +55,7 @@ const Projects = () => {
         <ProjectCard
           name={"Cellshop"}
           image={CellphoneImg}
+          technologies={["react", "html", "css", "javascript" ]}
           description={
             "Projeto criado utilizando a API do Mercado Livre, Axios, Local Storage e Styled Components."
           }
