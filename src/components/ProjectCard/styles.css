@@ -19,7 +19,21 @@
 .img{
     border: 1px solid hsl(203deg 100% 40%);
     border-radius: 14px;
+    width: 350px;
+    height: 160px;
 }
+
+.card .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+.project-infos{
+    width: 350px;    
+    height: 115px;
+
+}
+
 .project-infos h3{
     padding: 10px;
 }
@@ -30,24 +44,8 @@
     padding: 10px 0px 20px 10px;
 }
 
-.project-infos{
-    /* border: 1px solid blue; */
-}
-
-.project-tags{
-    /* border: 1px solid purple; */
-}
-
-.project-tags span{
-    padding: 0px 10px;    
-    margin-left: 5px;
-    border: 1px solid hsl(203deg 100% 40%);
-    border-radius: 10px;
-}
-
 .project-urls{
-    /* border: 1px solid yellow; */
-    padding: 15px;
+    padding-top: 5px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -60,3 +58,4 @@
     color: hsl(203deg 100% 40%);
     border-bottom: 1px solid white;
 }
+
