@@ -179,7 +179,7 @@ const Main = () => {
             <NavLink to="/projects">
               <div>
                 <JsIcon className="explorer-icon" />
-                <p className="not-save">project.js</p>
+                <p className="not-save">projects.js</p>
                 <VscClose className="hide" />
               </div>
             </NavLink>

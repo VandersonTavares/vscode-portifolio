@@ -1,61 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 
-*{
-    color: white;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.card{
-    /* border: 1px solid green; */
-    margin: 20px;
-    border-radius: 14px;
-    width: 350px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(0deg 0% 20%);
-}
-.img{
-    border: 1px solid hsl(203deg 100% 40%);
-    border-radius: 14px;
-    width: 350px;
-    height: 160px;
+.card {
+  margin: 0px 20px 30px 20px;
+  border-radius: 14px;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0deg 0% 20%);
 }
 
-.card .img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 14px;
-}
-.project-infos{
-    width: 350px;    
-    height: 115px;
-
+.img {
+  border-radius: 14px;
+  width: 100%;
+  height: 160px;
 }
 
-.project-infos h3{
-    padding: 10px;
+.card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
 }
-.project-infos a:hover{
-    color: hsl(203deg 100% 40%);
+.project-infos {
+  width: 350px;
+  height: 115px;
+}
+
+.project-infos h3 {
+  padding: 10px;
+}
+.project-infos a:hover {
+  color: hsl(203deg 100% 40%);
 }
 .project-infos p {
-    padding: 10px 0px 20px 10px;
+  padding: 10px 0px 20px 10px;
 }
 
-.project-urls{
-    padding-top: 5px;
-    display: flex;
-    justify-content: space-evenly;
+.project-urls {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.project-urls a{
-    border-bottom: 1px solid hsl(203deg 100% 40%);
+.project-urls a {
+  border-bottom: 1px solid hsl(203deg 100% 40%);
 }
 
-.project-urls a:hover{
-    color: hsl(203deg 100% 40%);
-    border-bottom: 1px solid white;
+.project-urls a:hover {
+  color: hsl(203deg 100% 40%);
+  border-bottom: 1px solid white;
 }
 
+.project-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-tags svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
