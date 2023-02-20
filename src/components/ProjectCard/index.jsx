@@ -10,20 +10,15 @@ import "./styles.css";
 
 const ProjectCard = ({ name, description, gitLink, demoLink, image, technologies }) => {
 
-  function ChangeTextToIcon(value) {
-    if (value === "html") {
-      return <HtmlIcon />;
-    } else if (value === "typescript") {
-      return <Typescript />;
-    } else if (value === "css") {
-      return <CssIcon />;
-    } else if (value === "react") {
-      return <ReactIcon />;
-    }else if (value === "javascript") {
-      return <Javascript />;
-    } else {
-      return null;
-    }
+  function TextToIcon(value) {
+      const icones = {
+        'react': <ReactIcon />,
+        'html': <HtmlIcon />,
+        'javascript': <Javascript />,
+        'typescript': <Typescript />,
+        'css': <CssIcon />,
+    };
+    return icones[value];
   }
 
   return (
@@ -42,9 +37,10 @@ const ProjectCard = ({ name, description, gitLink, demoLink, image, technologies
 
       <div className="project-tags">
         {technologies?.map((value) => {
+        console.log('render')
           return (
             <span key={value} className="project-tags">
-              {ChangeTextToIcon(value)}
+              {TextToIcon(value)}
             </span>
           );
         })}

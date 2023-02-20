@@ -37,7 +37,7 @@ const Projects = () => {
         <ProjectCard
           name={"Buscador de Usuário Github"}
           image={GithubImg}
-          technologies={[ "react", "html", "css", "javascript" ]}
+          technologies={[ "react", "html", "css", "javascript"]}
           description={
             "Pequeno desafio feito no bootcamp da DevSuperior, ensinando como consumir API's."
           }
