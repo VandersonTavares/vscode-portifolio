@@ -9,6 +9,7 @@ import VsCodeImg from "../../util/img/vscode-img.png";
 import GithubImg from "../../util/img/github-cover.jpg";
 import CellphoneImg from "../../util/img/cellshopbanner.png";
 import FoodCommerce from "../../util/img/food-commerce.png";
+import MusicApp from "../../util/img/musicapp.png";
 
 
 const Projects = () => {
@@ -27,6 +28,16 @@ const Projects = () => {
           gitLink={"https://github.com/VandersonTavares/vscode-portifolio"}
         />
         <ProjectCard
+          name={"Music App"}
+          image={MusicApp}
+          technologies={["react", "html", "css", "tailwind" ]}
+          description={
+            "NÃO FINALIZADO"
+          }
+          demoLink={"#"}
+          gitLink={"https://github.com/VandersonTavares/musicapp"}
+        />
+        <ProjectCard
           name={"Food Commerce"}
           image={FoodCommerce}
           technologies = {['react', 'html', 'css', 'typescript']}
@@ -37,7 +48,7 @@ const Projects = () => {
         <ProjectCard
           name={"Buscador de Usuário Github"}
           image={GithubImg}
-          technologies={[ "react", "html", "css", "javascript"]}
+          technologies={[ "react", "html", "css"]}
           description={
             "Pequeno desafio feito no bootcamp da DevSuperior, ensinando como consumir API's."
           }
@@ -55,7 +66,7 @@ const Projects = () => {
         <ProjectCard
           name={"Cellshop"}
           image={CellphoneImg}
-          technologies={["react", "html", "css", "javascript" ]}
+          technologies={["react", "html", "css" ]}
           description={
             "Projeto criado utilizando a API do Mercado Livre, Axios, Local Storage e Styled Components."
           }

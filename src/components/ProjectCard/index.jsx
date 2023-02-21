@@ -5,6 +5,7 @@ import { ReactComponent as HtmlIcon } from "../../util/img/html_icon.svg";
 import { ReactComponent as CssIcon } from "../../util/img/css_icon.svg";
 import { ReactComponent as Typescript } from "../../util/img/typescript-2.svg";
 import { ReactComponent as Javascript } from "../../util/img/js_icon.svg";
+import { ReactComponent as Tailwind } from "../../util/img/tailwind-css-icon.svg";
 
 import "./styles.css";
 
@@ -17,6 +18,7 @@ const ProjectCard = ({ name, description, gitLink, demoLink, image, technologies
         'javascript': <Javascript />,
         'typescript': <Typescript />,
         'css': <CssIcon />,
+        'tailwind' : <Tailwind/>
     };
     return icones[value];
   }
