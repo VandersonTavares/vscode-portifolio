@@ -10,6 +10,7 @@ import GithubImg from "../../util/img/github-cover.jpg";
 import CellphoneImg from "../../util/img/cellshopbanner.png";
 import FoodCommerce from "../../util/img/food-commerce.png";
 import MusicApp from "../../util/img/musicapp.png";
+import HydraPage from "../../util/img/hydra-page.jpg"
 
 
 const Projects = () => {
@@ -17,15 +18,13 @@ const Projects = () => {
     <div className="layout-content">
       <h3>Meus Projetos</h3>
       <div className="project-content">
-        <ProjectCard
-          name={"Vs-Code Protfolio"}
-          image={VsCodeImg}
-          technologies = {['react', 'html', 'css']}
-          description={
-            "Portfolio inspirado na IDE Visual Code Studio, projeto de portfolio pessoal."
-          }
-          demoLink={"https://vanderson-tavares-portfolio.netlify.app/"}
-          gitLink={"https://github.com/VandersonTavares/vscode-portifolio"}
+      <ProjectCard
+          name={"Hydra Landing Page"}
+          image={HydraPage}
+          technologies = {['react', 'html', 'css', 'tailwind']}
+          description={"Hydra Landing Page, projeto free da comunidade do Figma, link no repositorio."}
+          demoLink={"https://hydra-landingpage.netlify.app"}
+          gitLink={"https://github.com/VandersonTavares/hydra-page"}
         />
         <ProjectCard
           name={"Music App"}
@@ -37,6 +36,16 @@ const Projects = () => {
           demoLink={"#"}
           gitLink={"https://github.com/VandersonTavares/musicapp"}
         />
+          <ProjectCard
+            name={"Vs-Code Protfolio"}
+            image={VsCodeImg}
+            technologies = {['react', 'html', 'css']}
+            description={
+              "NÃO FINALIZADO - Portfolio inspirado na IDE Visual Code Studio, projeto de portfolio pessoal."
+            }
+            demoLink={"https://vanderson-tavares-portfolio.netlify.app/"}
+            gitLink={"https://github.com/VandersonTavares/vscode-portifolio"}
+          />
         <ProjectCard
           name={"Food Commerce"}
           image={FoodCommerce}
@@ -45,6 +54,14 @@ const Projects = () => {
           demoLink={"#"}
           gitLink={"https://github.com/VandersonTavares/Pedido-Online"}
         />
+          <ProjectCard
+            name={"Twitter Clone"}
+            image={TwitterImg}
+            technologies={["react", "html", "css", "typescript" ]}
+            description={"Projeto criado utlizando typescript, react-icons"}
+            demoLink={"https://hydra-landingpage.netlify.app/"}
+            gitLink={"https://github.com/VandersonTavares/twitter-clone"}
+          />
         <ProjectCard
           name={"Buscador de Usuário Github"}
           image={GithubImg}
@@ -54,14 +71,6 @@ const Projects = () => {
           }
           demoLink={"https://buscador-github-api.netlify.app/"}
           gitLink={"https://github.com/VandersonTavares/desafio-github"}
-        />
-        <ProjectCard
-          name={"Twitter Clone"}
-          image={TwitterImg}
-          technologies={["react", "html", "css", "typescript" ]}
-          description={"Projeto criado utlizando typescript, react-icons"}
-          demoLink={"https://uitwitter-clone.netlify.app"}
-          gitLink={"https://github.com/VandersonTavares/twitter-clone"}
         />
         <ProjectCard
           name={"Cellshop"}
