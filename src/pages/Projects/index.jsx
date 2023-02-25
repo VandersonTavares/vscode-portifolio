@@ -22,7 +22,7 @@ const Projects = () => {
           name={"Hydra Landing Page"}
           image={HydraPage}
           technologies = {['react', 'html', 'css', 'tailwind']}
-          description={"Hydra Landing Page, projeto free da comunidade do Figma, link no repositorio."}
+          description={"NÃO FINALIZADO - Hydra Landing Page, projeto free da comunidade do Figma, link no repositorio."}
           demoLink={"https://hydra-landingpage.netlify.app"}
           gitLink={"https://github.com/VandersonTavares/hydra-page"}
         />
