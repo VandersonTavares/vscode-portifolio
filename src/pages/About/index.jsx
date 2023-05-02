@@ -5,7 +5,6 @@ import "./styles.css";
 const About = () => {
   return (
     <div>
-      <h1>Página About</h1>
       <h3>Certificados</h3>
       <p><a href="https://learn.devsuperior.com/certificados/1834346" target={"_blank"} rel="noreferrer">Semana Spring React SDS 5.0 </a> </p>
       <p><a href="https://class.devsamurai.com.br/certificates/6c2dcdf6-3a60-4e12-97da-7121d34c198e" target={"_blank"} rel="noreferrer">Lógica de Programação Avançada</a> </p>

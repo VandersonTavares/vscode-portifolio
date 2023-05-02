@@ -88,12 +88,12 @@ const Main = () => {
                 <p>about.html</p>
               </Link>
             </div>
-            <div className="item">
+            {/* <div className="item">
               <Link to="/contact">
                 <CssIcon className="explorer-icon" />
                 <p>contact.css</p>
               </Link>
-            </div>
+            </div> */}
             <div className="item">
               <Link to="/projects">
                 <JsIcon className="explorer-icon" />
@@ -126,12 +126,12 @@ const Main = () => {
                 <p>about.html</p>
               </Link>
             </div>
-            <div className="item">
+            {/* <div className="item">
               <Link to="/contact">
                 <CssIcon className="explorer-icon" />
                 <p>contact.css</p>
               </Link>
-            </div>
+            </div> */}
             <div className="item">
               <Link to="/projects">
                 <JsIcon className="explorer-icon" />
@@ -166,7 +166,7 @@ const Main = () => {
               </div>
             </NavLink>
           </div>
-          <div className="tab">
+          {/* <div className="tab">
             <NavLink to="/contact">
               <div>
                 <CssIcon className="explorer-icon" />
@@ -174,7 +174,7 @@ const Main = () => {
                 <VscClose className="hide" />
               </div>
             </NavLink>
-          </div>
+          </div> */}
           <div className="tab">
             <NavLink to="/projects">
               <div>

@@ -10,7 +10,7 @@ import GithubImg from "../../util/img/github-cover.jpg";
 import CellphoneImg from "../../util/img/cellshopbanner.png";
 import FoodCommerce from "../../util/img/food-commerce.png";
 import MusicApp from "../../util/img/musicapp.png";
-import HydraPage from "../../util/img/hydra-page.jpg";
+// import HydraPage from "../../util/img/hydra-page.jpg";
 import Pokedex from "../..//util/img/pokedex.jpg";
 
 const Projects = () => {
@@ -18,7 +18,17 @@ const Projects = () => {
     <div className="layout-content">
       <h3>Meus Projetos</h3>
       <div className="project-content">
-        <ProjectCard
+      {/* <ProjectCard
+          name={"Melhores Filmes"}
+          image={HydraPage}
+          technologies={["react", "html", "css", "tailwind"]}
+          description={
+            "NÃO FINALIZADO - Falta responsividade."
+          }
+          demoLink={"https://hydra-landingpage.netlify.app"}
+          gitLink={"https://github.com/VandersonTavares/hydra-page"}
+        /> */}
+        {/* <ProjectCard
           name={"Hydra Landing Page"}
           image={HydraPage}
           technologies={["react", "html", "css", "tailwind"]}
@@ -27,7 +37,7 @@ const Projects = () => {
           }
           demoLink={"https://hydra-landingpage.netlify.app"}
           gitLink={"https://github.com/VandersonTavares/hydra-page"}
-        />
+        /> */}
         <ProjectCard
           name={"Music App"}
           image={MusicApp}
@@ -60,7 +70,7 @@ const Projects = () => {
           image={TwitterImg}
           technologies={["react", "html", "css", "typescript"]}
           description={"Projeto criado utlizando typescript, react-icons"}
-          demoLink={"https://hydra-landingpage.netlify.app/"}
+          demoLink={"https://uitwitter-clone.netlify.app"}
           gitLink={"https://github.com/VandersonTavares/twitter-clone"}
         />
         <ProjectCard
