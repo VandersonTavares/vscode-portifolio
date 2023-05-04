@@ -11,6 +11,7 @@ import CellphoneImg from "../../util/img/cellshopbanner.png";
 import FoodCommerce from "../../util/img/food-commerce.png";
 import MusicApp from "../../util/img/musicapp.png";
 // import HydraPage from "../../util/img/hydra-page.jpg";
+import Fenix from "../../util/img/colegio-fenix-image.jpg";
 import Pokedex from "../..//util/img/pokedex.jpg";
 
 const Projects = () => {
@@ -28,16 +29,16 @@ const Projects = () => {
           demoLink={"https://hydra-landingpage.netlify.app"}
           gitLink={"https://github.com/VandersonTavares/hydra-page"}
         /> */}
-        {/* <ProjectCard
-          name={"Hydra Landing Page"}
-          image={HydraPage}
+        <ProjectCard
+          name={"Colégio Fênix"}
+          image={Fenix}
           technologies={["react", "html", "css", "tailwind"]}
           description={
-            "NÃO FINALIZADO - Hydra Landing Page, projeto free da comunidade do Figma, link no repositorio."
+            "Finalizando, só preciso terminar a responsividade."
           }
-          demoLink={"https://hydra-landingpage.netlify.app"}
-          gitLink={"https://github.com/VandersonTavares/hydra-page"}
-        /> */}
+          demoLink={"https://adorable-sundae-b89d6e.netlify.app"}
+          gitLink={"https://github.com/VandersonTavares/colegio-fenix"}
+        />
         <ProjectCard
           name={"Music App"}
           image={MusicApp}
