@@ -9,8 +9,7 @@ import VsCodeImg from "../../util/img/vscode-img.png";
 import GithubImg from "../../util/img/github-cover.jpg";
 import CellphoneImg from "../../util/img/cellshopbanner.png";
 import FoodCommerce from "../../util/img/food-commerce.png";
-import MusicApp from "../../util/img/musicapp.png";
-// import HydraPage from "../../util/img/hydra-page.jpg";
+import ReactPort from "../../util/img/react-portfolio.jpg";
 import Fenix from "../../util/img/colegio-fenix-image.jpg";
 import Pokedex from "../..//util/img/pokedex.jpg";
 
@@ -19,16 +18,14 @@ const Projects = () => {
     <div className="layout-content">
       <h3>Meus Projetos</h3>
       <div className="project-content">
-      {/* <ProjectCard
-          name={"Melhores Filmes"}
-          image={HydraPage}
+        <ProjectCard
+          name={"Novo Portfolio"}
+          image={ReactPort}
           technologies={["react", "html", "css", "tailwind"]}
-          description={
-            "NÃO FINALIZADO - Falta responsividade."
-          }
-          demoLink={"https://hydra-landingpage.netlify.app"}
-          gitLink={"https://github.com/VandersonTavares/hydra-page"}
-        /> */}
+          description={"Atualização do portfolio"}
+          demoLink={"https://vandersontavares.netlify.app/"}
+          gitLink={"https://github.com/VandersonTavares/react-portfolio"}
+        />
         <ProjectCard
           name={"Colégio Fênix"}
           image={Fenix}
@@ -38,14 +35,6 @@ const Projects = () => {
           }
           demoLink={"https://adorable-sundae-b89d6e.netlify.app"}
           gitLink={"https://github.com/VandersonTavares/colegio-fenix"}
-        />
-        <ProjectCard
-          name={"Music App"}
-          image={MusicApp}
-          technologies={["react", "html", "css", "tailwind"]}
-          description={"NÃO FINALIZADO"}
-          demoLink={"#"}
-          gitLink={"https://github.com/VandersonTavares/musicapp"}
         />
 
         <ProjectCard
