@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { ReactComponent as ReactIcon } from "../../util/img/react_icon.svg";
 import { ReactComponent as HtmlIcon } from "../../util/img/html_icon.svg";
-import { ReactComponent as CssIcon } from "../../util/img/css_icon.svg";
+// import { ReactComponent as CssIcon } from "../../util/img/css_icon.svg";
 import { ReactComponent as JsIcon } from "../../util/img/js_icon.svg";
 import { ReactComponent as JsonIcon } from "../../util/img/json_icon.svg";
 
