@@ -14,9 +14,9 @@ const Home = () => {
           <div className="button">
           <NavLink to="/projects">Projects</NavLink>
           </div>
-          <div className="button">
+          {/* <div className="button">
             <NavLink to="/contact">Contato</NavLink>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
